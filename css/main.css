@@ -1,0 +1,443 @@
+body {
+  background-color: #ffffff;
+  color: #000000;
+  padding-top: 56px;
+}
+
+.main-logo {
+  width: 200px;
+}
+
+.navbar {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+footer {
+  border-top: 1px solid #e5e5e5;
+}
+
+/* 사이드 메뉴 */
+.accordion-button {
+  background-color: #fff !important;
+  color: #000;
+  box-shadow: none !important;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border-top: 2px solid #000;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.accordion-button:not(.collapsed),
+.accordion-button:focus {
+  background-color: #fff !important;
+  color: #000;
+  box-shadow: none;
+  border-top: 2px solid #000;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.accordion-button::after {
+  background-size: 0.8rem;
+}
+
+.accordion-button.no-arrow::after {
+  display: none;
+}
+
+.accordion-body {
+  padding: 0.75rem 1.75rem 1rem;
+}
+
+.accordion-body ul li {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.accordion-body ul li a {
+  color: #444;
+  text-decoration: none;
+}
+
+.accordion-body ul li a:hover {
+  text-decoration: underline;
+}
+
+/* 사이드 메뉴 */
+
+/* 슬라이드 사진 */
+.carousel-inner img {
+  height: 520px;
+  object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 48px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 14px 14px;
+  filter: invert(1);
+  opacity: 0.4;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  opacity: 0.9;
+}
+
+/* 슬라이드 사진 */
+
+.main-banner {
+  padding: 50px 0;
+  background-color: #f6f6f6;
+}
+
+.view-more {
+  margin-top: 80px;
+}
+
+.view-more>a {
+  text-decoration: none;
+}
+
+/* 카테고리 */
+.category-section.fixed {
+  position: fixed;
+  top: 56px;
+  /* nav 높이 */
+  left: 0;
+  width: 100%;
+  z-index: 1020;
+  background: #fff;
+}
+
+body.has-fixed-category {
+  padding-top: 176px !important;
+}
+
+.category-section {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  background: #fff;
+}
+
+.category-list {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 0.75rem 0;
+  margin: 0;
+  list-style: none;
+}
+
+.category-list a {
+  text-decoration: none;
+  color: #888;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+}
+
+.category-list a:hover {
+  color: #000;
+}
+
+.category-list li a {
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  color: #9a9a9a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.category-list li a:hover {
+  color: #000;
+}
+
+.category-list li a.active {
+  color: #000;
+  font-weight: 600;
+}
+
+/* 카테고리 */
+
+/* 상품 사진 */
+.product-card {
+  border: 1px solid #e5e5e5;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.product-img {
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  color: #999;
+  width: 100%;
+  height: 220px; 
+}
+
+.product-img img {
+  height: 442px;
+}
+
+/* 상품 사진 */
+
+/* 마이페이지 */
+.mypage {
+  max-width: 1100px;
+}
+
+.mypage-title {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.mypage-tab {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #aaa;
+}
+
+.mypage-tab a {
+  color: #aaa;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.mypage-tab a.active {
+  color: #000;
+  font-weight: 500;
+}
+
+.mypage-divider {
+  border-top: 1px solid #e5e5e5;
+  margin: 20px 0 50px;
+}
+
+/* 마이페이지 */
+
+/* 내 정보 */
+.profile-img {
+  width: 120px;
+  height: 120px;
+  background-color: #d0d0d0;
+  border-radius: 50%;
+  font-size: 48px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-row {
+  display: flex;
+  margin-bottom: 14px;
+  font-size: 0.95rem;
+}
+
+.info-row .label {
+  width: 90px;
+  color: #555;
+  font-weight: 500;
+}
+
+.mypage-right {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.mypage-right a {
+  color: #888;
+  text-decoration: none;
+  margin-left: 14px;
+}
+
+.mypage-right a:hover {
+  text-decoration: underline;
+}
+
+/* 내 정보 */
+
+/* 장바구니 */
+.cart-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.cart-table {
+  font-size: 0.9rem;
+  border-top: 2px solid #999;
+}
+
+.cart-table thead th {
+  font-weight: 500;
+  color: #555;
+  border-bottom: 1px solid #bbb;
+  padding: 12px 8px;
+}
+
+.cart-table tbody td {
+  padding: 14px 8px;
+  vertical-align: middle;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-table input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+
+.qty-input {
+  width: 60px;
+  padding: 4px 6px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.cart-summary {
+  margin-top: 30px;
+  max-width: 300px;
+  margin-left: auto;
+  font-size: 0.9rem;
+}
+
+.cart-summary div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+.cart-summary .total {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #ddd;
+  font-weight: 600;
+  color: #000;
+}
+
+/* 장바구니 */
+
+/* 주문내역 */
+.order-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.order-table {
+  font-size: 0.9rem;
+  border-top: 2px solid #999;
+}
+
+.order-table thead th {
+  font-weight: 500;
+  color: #555;
+  border-bottom: 1px solid #bbb;
+  padding: 12px 8px;
+}
+
+.order-table tbody td {
+  padding: 14px 8px;
+  vertical-align: middle;
+  border-bottom: 1px solid #eee;
+}
+
+.status {
+  font-size: 0.85rem;
+}
+
+.status.done {
+  color: #555;
+}
+
+.status.return {
+  color: #999;
+}
+
+/* 주문내역 */
+
+/*제품 상세정보*/
+
+.product-image-wrap {
+  width: 100%;
+  max-width: 380px; 
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  background-color: #fafafa;
+}
+
+.product-detail-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+
+.product-info {
+  border-top: 2px solid #222;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.product-title {
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+
+.info-row {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.info-row .label {
+  width: 120px;
+  font-size: 14px;
+  color: #666;
+}
+
+.info-row .value {
+  flex: 1;
+  font-size: 15px;
+}
+
+
+.qty-input {
+  width: 60px;
+  text-align: center;
+  margin: 0 8px;
+}
+
+
+.total-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0d6efd;
+}
+
+
+.button-area {
+  display: flex;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+
