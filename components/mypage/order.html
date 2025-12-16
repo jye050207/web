@@ -13,13 +13,95 @@
 <body>
 
   <!-- Header -->
-  <header id="header" class="border-bottom"></header>
+  <header id="header" class="border-bottom">
+<div class="container py-4 text-center">
+  <a class="navbar-brand" href="/index.html">
+    <img class="main-logo" src="/image/main/logo.jpg" alt="logo">
+  </a>
+</div>
+</header>
 
   <!-- Navigation -->
-  <nav id="nav" class="navbar navbar-expand bg-white fixed-top"></nav>
+  <nav id="nav" class="navbar navbar-expand bg-white fixed-top">
+<div class="container justify-content-between align-items-center">
+
+  <!-- Menu Button -->
+  <button class="btn p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideMenu" style="width: 80px;">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Center Menu -->
+  <ul class="navbar-nav mx-auto gap-4">
+    <li class="nav-item"><a class="nav-link fw-semibold" href="/index.html">Home</a></li>
+    <li class="nav-item"><a class="nav-link fw-semibold" href="/components/store/bracelet.html">Store</a></li>
+    <li class="nav-item"><a class="nav-link fw-semibold" href="/components/reserve/reserve.html">Reserve</a></li>
+  </ul>
+
+  <!-- Right -->
+  <a href="/components/mypage/mypage.html" class="text-decoration-none text-dark fw-semibold" style="width: 80px;">My Page</a>
+
+</div>
+</nav>
 
   <!-- Side Menu -->
-  <div id="sideMenu" class="offcanvas offcanvas-start" tabindex="-1"></div>
+  <div id="sideMenu" class="offcanvas offcanvas-start" tabindex="-1">
+<div class="offcanvas-header">
+  <h5 class="offcanvas-title">Menu</h5>
+  <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+</div>
+
+<div class="offcanvas-body p-0">
+  <div class="accordion accordion-flush" id="sideMenuAccordion">
+
+    <!-- My Page -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menuMyPage">
+          My Page
+        </button>
+      </h2>
+      <div id="menuMyPage" class="accordion-collapse collapse" data-bs-parent="#sideMenuAccordion">
+        <div class="accordion-body">
+          <ul class="list-unstyled mb-0">
+            <li><a href="/components/mypage/mypage.html">내 정보</a></li>
+            <li><a href="/components/mypage/cart.html">장바구니</a></li>
+            <li><a href="/components/mypage/order.html">주문 조회</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Store -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menuStore">
+          Store
+        </button>
+      </h2>
+      <div id="menuStore" class="accordion-collapse collapse" data-bs-parent="#sideMenuAccordion">
+        <div class="accordion-body">
+          <ul class="list-unstyled mb-0">
+            <li><a href="/components/store/bracelet.html">팔찌</a></li>
+            <li><a href="/components/store/necklace.html">목걸이</a></li>
+            <li><a href="/components/store/keyring.html">키링</a></li>
+            <li><a href="/components/store/diy.html">D.I.Y</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reserve -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <a href="/components/reserve/reserve.html" class="accordion-button collapsed no-arrow text-decoration-none">
+          Reserve
+        </a>
+      </h2>
+    </div>
+
+  </div>
+</div>
+</div>
 
   <!-- 주문조회 Section -->
   <section class="py-5">
@@ -87,7 +169,10 @@
   </section>
 
   <!-- Footer -->
-  <footer id="footer" class="py-4 text-center"></footer>
+  <footer id="footer" class="py-4 text-center">
+<p class="fw-bold mb-1">Knoti</p>
+<p class="text-muted small mb-0">© 2025 All Rights Reserved</p>
+</footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="/js/include.js"></script>
